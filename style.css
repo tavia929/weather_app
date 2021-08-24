@@ -49,10 +49,7 @@ body {
   .button-container {
     margin: 60px 0;
   }
-  .music-icon {
-    color: blue;
-    font-size: 100px;
-  }
+ 
   .music-icon:hover {
     color: chartreuse;
     transition: all 150ms ease-in-out;
