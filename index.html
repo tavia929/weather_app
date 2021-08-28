@@ -20,62 +20,81 @@
       src="https://kit.fontawesome.com/f07e3e62ec.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Libra App</title>
   </head>
   
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
-      <h1>New York</h1>
-      <ul>
-        <li>Friday 5:00</li>
-        <li>Cloudy</li>
-      </ul>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Select New City"
+            autofocus="on"
+            autocomplete="off"
+            id="city-input"
+            class="form-control shadow-sm"
+          />
+
+          <br />
+          <h1 id="city"></h1>
+          <ul>
+            <li>Friday 5:00</li>
+            <li id="conditions"></li>
+          </ul>
+        </div>
+        
           <div class="row">
             <div class="col-6">
-              <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy"/>
-              12°C | °F
+              <div class="clearfix weather-temperature">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy"
+                class="float-left"/>
+                <span class="float-left"> 
+                <strong id="temperature"> 12 </strong> 
+                <span class="units"> °C | °F </span> 
+                </span>
             </div>
           </div>
-
-            <div class="col-6"></div>
+            
+            <div class="col-6">
+              <div class="float-right">
             <ul>
               <li>Precipitation: 10%</li>
               <li>Humidity: 68%</li>
               <li>Wind: 8 mph</li>              
             </ul>
-              <input
-                type="search"
-                placeholder="Select a City"
-                autofocus="on"
-                autocomplete="off"
-                id="city-input"
-                class="form-control shadow-sm"
-              />
             </div>
           </div>
-  <div class="container">
-    <div class="row">
-      <div class="col">Thursday</div>
-      <div class="col">Friday</div>
-      <div class="col">Saturday</div>
-      <div class="col">Sunday</div>
-      <div class="col">Monday</div>
-      <small>
-      <footer>
-        <a
-          href="gifted-determined-ob94d2a.netlify.app"
-          target="_blank">Open-source code</a>
-        by Octavia Brown 😘
-        <br />
-        Hosted by
-        <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-      </footer>
-    </small>
-  </div>
-    </div>
+
+             <br />
+            <div class="container">
+              <div class="row">
+                <div class="col">Thursday</div>
+                <div class="col">Friday</div>
+                <div class="col">Saturday</div>
+                <div class="col">Sunday</div>
+                <div class="col">Monday</div>
+              </div>
+            </div>
+
+            <hr></hr>
+                <small>
+                <footer>
+                  <a
+                    href="gifted-determined-ob94d2a.netlify.app"
+                    target="_blank">Open-source code</a>
+                  by Octavia Brown 😘
+                  <br />
+                  Hosted by
+                  <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+                </footer>
+              </small>
+
       <script src="src/script.js"></script>
+
       </body>
 </html>

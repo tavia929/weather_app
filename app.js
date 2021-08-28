@@ -1,7 +1,3 @@
-let apiKey = "856b5bb0ab2beee3a272dcebd03929e8";
-let city = "London";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric`;
-
 function showTemperature(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
@@ -9,12 +5,19 @@ function showTemperature(response) {
   temperatureElement.innerHTML = `${temperature}°C`;
   let description = document.querySelector("#temperature-description");
   description.innerHTML = response.data.weather[0].description;
-}
+  }
+  
+let apiKey = "856b5bb0ab2beee3a272dcebd03929e8";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}=${apiKey}&units=metric`;
+
+axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
+
+let city = "London";
+
 
 let h1 = document.querySelector("#city");
 h1.innerHTML = city;
 
-axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemperature);
 
 let now = new Date();
 let h3 = document.querySelector("h3");
