@@ -81,3 +81,9 @@ body {
   position: relative;
   font-size: 48px;
 }
+
+.weather-temperature .active {
+  color: chartreuse;
+  cursor: default;
+  text-decoration: none;
+}
