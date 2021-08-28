@@ -23,6 +23,11 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Libra App</title>
+    <style>
+      body {
+        background-image: url('https://jooinn.com/images/beautiful-mountains-17.jpg');
+      }
+    </style>
   </head>
   
   <body>
@@ -52,7 +57,7 @@
           <h1 id="city"></h1>
           <br />
           <ul>
-            <li> Last Updated At... <span id="date"></span></li>
+            <li> Last Updated On <span id="date"></span></li>
             <li id="description"></li>
           </ul>
           <br />
@@ -77,36 +82,26 @@
             <div class="col-6">
               <div class="float-right">
             <ul>
-              <li>Precipitation: 10%</li>
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> mph</li>              
             </ul>
             </div>
           </div>
-          
-             <hr></hr>
-            <div class="weather-forecast">
-              <div class="row">
-                <div class="col-2">
-                <div class="weather-forecast-date">Thursday</div>
-                <div class="weather-forecast-temp"> 
-                  <span class="weather-forecast-temp-max">18°</span>  
-                  <span class="weather-forecast-temp-min">12°</span> 
-              </div>
-            </div>
-          </div>
 
-                <small>
+             <hr></hr>
+
+             <div class="weather-forecast" id="forecast"></div>
+            <br />
+             <hr></hr>
+
                 <footer>
                   <a
                     href="gifted-determined-ob94d2a.netlify.app"
                     target="_blank">Open-source code</a>
-                  by Octavia Brown 😘
-                  <br />
-                  Hosted by
+                  by Octavia Brown 😘 + Hosted by
                   <a href="https://www.netlify.com/" target="_blank">Netlify</a>
                 </footer>
-              </small>
+            
 
       <script src="src/app.js"></script>
 

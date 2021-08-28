@@ -4,7 +4,7 @@
     }
 
     h1 {
-      color: rebeccapurple;
+      color: yellow;
       font-size: 36px;
       font-weight: 600;
       line-height: 28px;
@@ -16,7 +16,7 @@
       line-height: 48px;
       margin: 0;
       font-weight: 900;
-      color: #131216;
+      color: yellow;
       padding: 0 0 24px;
     }
 
@@ -31,7 +31,7 @@
       margin: 0;
       padding: 0;
       text-transform: capitalize;
-      color: rebeccapurple;
+      color: yellow;
   }
 
     button {
@@ -46,6 +46,10 @@
       text-decoration: none;
       transition: all 200ms ease;
       box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+    }
+
+    footer {
+      color: whitesmoke;
     }
 
   .weather-app-wrapper {
@@ -77,13 +81,13 @@
   }
 
   .weather-temperature .units {
-    color: #8064e9;
+    color: yellow;
     position: relative;
     font-size: 48px;
   }
 
   .weather-temperature .active {
-    color: rgb(109, 110, 107);
+    color: yellow;
     cursor: default;
     text-decoration: none;
   }
@@ -95,20 +99,21 @@
   .weather-forecast {
     margin-top: 20px;
     text-align: center;
-    color: rebeccapurple;
+    color: yellow;
   }
 
   .weather-forecast-date {
-    font-size: 16px;
-    color: chartreuse;
+    font-size: 26px;
+    color: whitesmoke;
     opacity: 0.4;
 }
 
   .weather-forecast-temp-min {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
   .weather-forecast-temp {
-    font-size: 16px;
-    color: green;
+    font-size: 26px;
+    font-weight: 800;
+    color: crimson;
   }
