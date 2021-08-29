@@ -61,6 +61,8 @@
         padding: 20px;
         border: 8px solid chartreuse;
         border-radius: 5px;
+        background-color: teal;
+        opacity: 0.7;
     }
 
   .overview {
@@ -104,7 +106,8 @@
 
   .weather-forecast-date {
     font-size: 26px;
-    color: whitesmoke;
+    color: orangered;
+    font-weight: 700;
     opacity: 0.4;
 }
 
@@ -114,6 +117,6 @@
 
   .weather-forecast-temp {
     font-size: 26px;
-    font-weight: 800;
+    font-weight: 700;
     color: crimson;
   }
