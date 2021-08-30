@@ -48,8 +48,9 @@
       box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
     }
 
-    footer {
+    p {
       color: whitesmoke;
+      font-size: 22px;
     }
 
   .weather-app-wrapper {
@@ -61,7 +62,7 @@
         padding: 20px;
         border: 8px solid chartreuse;
         border-radius: 5px;
-        background-color: teal;
+        background-color: rgb(43, 42, 42);
         opacity: 0.7;
     }
 
@@ -83,7 +84,7 @@
   }
 
   .weather-temperature .units {
-    color: yellow;
+    color: chartreuse;
     position: relative;
     font-size: 48px;
   }
